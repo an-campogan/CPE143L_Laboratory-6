@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validating Form Data</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+<div class="form-container">
+  <h2>Sign Up</h2>
+  <form id="signUpForm" novalidate>
+
+    <div class="input">
+      <span class="error-msg" id="firstNameError"></span>
+      <input type="text" id="firstName" placeholder="First Name">
+    </div>
+
+    <div class="input">
+      <span class="error-msg" id="middleInitialError"></span>
+      <input type="text" id="middleInitial" placeholder="Middle Initial">
+    </div>
+
+    <div class="input">
+      <span class="error-msg" id="lastNameError"></span>
+      <input type="text" id="lastName" placeholder="Last Name">
+    </div>
+
+    <div class="input">
+      <span class="error-msg" id="emailError"></span>
+      <input type="text" id="email" placeholder="Email Address">
+    </div>
+
+    <button type="submit" class="btn submit-btn">Submit</button>
+    <button type="button" class="btn reset-btn" id="resetBtn">Reset</button>
+
+  </form>
+</div>
+
+<div id="AlertOverlay" class="alert">
+  <div class="alert-panel">
+    <div class="alert-header">This page says</div>
+    <div class="alert-body">Success!</div>
+    <button type="button" id="alertBtn" class="alert-btn">OK</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
